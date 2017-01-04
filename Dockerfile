@@ -1,7 +1,8 @@
 # Dockerfile for a simple Nginx stream replicator
+FROM alpine:3.4
+MAINTAINER David Bindloss <dbindloss+docker@gmail.com>
 
 # Software versions
-FROM alpine:3.4
 ENV NGINX_VERSION nginx-1.11.4
 ENV NGINX_RTMP_MODULE_VERSION 1.1.7.10
 ENV FFMPEG_VERSION=3.0.2
