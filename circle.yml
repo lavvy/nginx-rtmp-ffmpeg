@@ -5,6 +5,10 @@ machine:
   services:
     - docker
 
+dependencies:
+  override:
+    - ./build.sh
+
 deployment:
   hub:
     branch: master
