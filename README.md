@@ -20,3 +20,21 @@ Then to run
 docker run dbindloss/nginx-rtmp-ffmpeg
 ```
 
+The nginx config file is located at `/etc/nginx/nginx.conf` so if you want to override it with your own you can either write your own Dockerfile
+
+```
+FROM dbindloss/nginx-rtmp-ffmpeg
+
+COPY nginx.conf /etc/nginx/nginx.conf
+```
+
+Or you can volume mount a new nginx configuration file from the command line
+
+```
+docker run -v nginx.conf:/etc/nginx/nginx.conf dbindloss/nginx-rtmp-ffmpeg
+```
+
+
+The basic nginx.conf doesn't allow you to do all that much. Some other nginx config examples can be found in the examples directory.
+
+
