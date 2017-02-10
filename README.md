@@ -1,4 +1,5 @@
 # NGINX with RTMP Streaming Module & FFMPEG
+[![Build Status](https://travis-ci.org/DavidBindloss/nginx-rtmp-ffmpeg.svg?branch=master)](https://travis-ci.org/DavidBindloss/nginx-rtmp-ffmpeg)
 
 A simple easy to use all-in-one box for creating a streaming RTMP server.
 
